@@ -1,12 +1,14 @@
 // import React from 'react'
 import './Menu.css';
 import data from '../../constants/data';
+// import {Menu} from '../../constants/data';
 import images from '../../constants/images';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 const Menu = () => {
+  // console.log(data, typeof data)
   return (
     <Navbar collapseOnSelect expand="lg" bg='ligth' variant='ligth' >
       <Container>
@@ -16,7 +18,7 @@ const Menu = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end' >
           <Nav>
-            {data.menu.map((item, index) => (
+            {data.Menu.map((item, index) => (
               <Nav.Link key={index} href={item.link} >{item.text}</Nav.Link>
             ))}
           </Nav>
@@ -27,4 +29,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default Menu;
