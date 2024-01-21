@@ -1,5 +1,6 @@
 // import React from 'react'
-import { Headings, IconScroll } from "../../components";
+import Headings from "../../components/Headings/Headings";
+import IconScroll from "../../components/IconScroll/IconScroll";
 import { data } from "../../constants";
 import "./CaseStudies.css";
 import { FiArrowUpRight } from "react-icons/fi";
