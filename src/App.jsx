@@ -5,6 +5,7 @@ import Services from './sections/services/Services';
 import CTA from './sections/CTA/CTA';
 import CaseStudies from './sections/CaseStudies/CaseStudies';
 import Process from './sections/Process/Process';
+import Team from './sections/Team/Team';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <CTA/>
       <CaseStudies />
       <Process />
+      <Team />
     </div>
   )
 }
