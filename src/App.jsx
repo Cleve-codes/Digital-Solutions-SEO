@@ -6,6 +6,7 @@ import CTA from './sections/CTA/CTA';
 import CaseStudies from './sections/CaseStudies/CaseStudies';
 import Process from './sections/Process/Process';
 import Team from './sections/Team/Team';
+import Testimonials from './sections/Testimonials/Testimonials';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <CaseStudies />
       <Process />
       <Team />
+      <Testimonials />
     </div>
   )
 }
