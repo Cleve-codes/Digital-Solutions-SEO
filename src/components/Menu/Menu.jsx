@@ -16,7 +16,7 @@ const Menu = () => {
     <Navbar.Brand href="#home" className='logo' >
       <div style={{ display: 'flex', alignItems: 'center', gap: '1em' }}>
         <img src={images.logo} alt="logo" className='img-logo'  />
-        <h1 className="h1">SMS</h1>
+        <h1 className="h1">SM Digital</h1>
       </div>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
