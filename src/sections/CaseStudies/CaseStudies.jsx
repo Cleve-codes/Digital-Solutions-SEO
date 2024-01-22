@@ -3,7 +3,7 @@ import Headings from "../../components/Headings/Headings";
 import IconScroll from "../../components/IconScroll/IconScroll";
 import { data } from "../../constants";
 import "./CaseStudies.css";
-import { FiArrowUpRight } from "react-icons/fi";
+// import { FiArrowUpRight } from "react-icons/fi";
 
 const CaseStudies = () => {
   return (
@@ -17,8 +17,13 @@ const CaseStudies = () => {
         {data.CaseStudies.map(({ text, link }, index) => (
           <div key={index} className="case-studies-item">
             <p>{text}</p>
-            <a href={link} alt="Learn more">
-              Learn more <FiArrowUpRight />
+            <a href={link}>
+            <button className="learn-more">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
+              </span>
+              <span className="button-text">Learn More</span>
+            </button>
             </a>
           </div>
         ))}
