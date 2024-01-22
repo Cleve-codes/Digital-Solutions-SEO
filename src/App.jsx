@@ -8,6 +8,7 @@ import Process from './sections/Process/Process';
 import Team from './sections/Team/Team';
 import Testimonials from './sections/Testimonials/Testimonials';
 import Contact from './sections/Contact/Contact';
+import Footer from './sections/Footer/Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Team />
       <Testimonials />
       <Contact />
+      <Footer />
     </div>
   )
 }

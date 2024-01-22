@@ -1,4 +1,8 @@
 import images from './images';
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
+import { IoLogoLinkedin } from "react-icons/io5";
 
 const Menu = [
     {
@@ -182,4 +186,94 @@ const Testimonials = [
         testimonial: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
     },
 ];
-export default { Menu, CaseStudies, WorkingProcess, Team, Testimonials, ServicesData };
+
+const FooterLinks = [
+    {
+        title: "Useful Links",
+        links: [
+          {
+            name: "Content",
+            link: "#",
+          },
+          {
+            name: "How it Works",
+            link: "#",
+          },
+          {
+            name: "Create",
+            link: "#",
+          },
+          {
+            name: "Explore",
+            link: "#",
+          },
+          {
+            name: "Terms & Services",
+            link: "#",
+          },
+        ],
+      },
+      {
+        title: "Community",
+        links: [
+          {
+            name: "Help Center",
+            link: "#",
+          },
+          {
+            name: "Partners",
+            link: "#",
+          },
+          {
+            name: "Suggestions",
+            link: "#",
+          },
+          {
+            name: "Blog",
+            link: "#",
+          },
+          {
+            name: "Newsletters",
+            link: "#",
+          },
+        ],
+      },
+      {
+        title: "Partner",
+        links: [
+          {
+            name: "Our Partner",
+            link: "#",
+          },
+          {
+            name: "Become a Partner",
+            link: "#",
+          },
+        ],
+      },
+]
+
+export const socialMedia = [
+    {
+      id: "social-media-1",
+      icon: FaInstagram,
+      link: "https://www.instagram.com/",
+    },
+    {
+      id: "social-media-2",
+      icon: FaFacebook,
+      link: "https://www.facebook.com/",
+    },
+    {
+      id: "social-media-3",
+      icon: BsTwitterX,
+      link: "https://www.twitter.com/",
+    },
+    {
+      id: "social-media-4",
+      icon: IoLogoLinkedin,
+      link: "https://www.linkedin.com/",
+    },
+  ];
+
+export default { Menu, CaseStudies, WorkingProcess, Team, Testimonials, ServicesData, FooterLinks, socialMedia };
