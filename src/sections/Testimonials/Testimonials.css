@@ -50,12 +50,12 @@ margin-top: 1.5rem;
 }
 
 .carousel-indicators [data-bs-target]{
-  background: url(../../assets/disable.png) no-repeat;
+  background: url(../../assets/disable.svg) no-repeat;
 }
 
 
 .carousel-indicators .active{
-  background: url(../../assets/enable.png) no-repeat;
+  background: url(../../assets/enable.svg) no-repeat;
 }
 
 .carousel-control-next, .carousel-control-prev
