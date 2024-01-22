@@ -84,12 +84,12 @@
 }
 
 .accordion-button:not(.collapsed) {
-  background: var(--color-highlight);
+  background: var(--color-highlight-2);
 }
 
 
 .accordion-body{
-  background: var(--color-highlight);
+  background: var(--color-highlight-2);
   border-bottom-left-radius: 45px;
   border-bottom-right-radius: 45px;
 }

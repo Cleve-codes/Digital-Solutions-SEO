@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="col-md-6 col-12">
           <h1 className="title"> Navigating the digital landscape for success </h1>
           <p className="py-4">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-          <button className="btn-positivus">Book a consultation</button>
+          <button className="bg-blue-gradient btn-positivus">Book a consultation</button>
         </div>
         <div className="col-md-6 col-12 mt-md-0 mt-4">
           <img className="img-fluid" src={images.hero} alt="design" />

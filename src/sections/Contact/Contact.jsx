@@ -1,6 +1,8 @@
 // import React from 'react'
 import Headings from "../../components/Headings/Headings";
 import "./Contact.css";
+
+
 const Contact = () => {
   return (
     <div className="section-padding">

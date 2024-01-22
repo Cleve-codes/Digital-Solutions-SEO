@@ -1,3 +1,24 @@
+/* .hero{
+   /* background-color: var(); */
+   /* background: linear-gradient(
+      144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    ); */
+   /* height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center; */
+   /* color: #fff; */
+/* } */
+
+.hero p {
+   color: #fff;
+}
+
 .clients{
   display: flex;
   justify-content: center;

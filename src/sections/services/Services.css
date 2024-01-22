@@ -25,7 +25,7 @@
 }
 
 .bgreen {
-    background: var(--color-highlight);
+    background: var(--color-highlight-2);
 }
 
 .blight {
@@ -44,7 +44,7 @@
 }
 
 .blight span {
-    background: var(--color-highlight);
+    background: var(--color-highlight-2);
 }
 
 .bgreen span {

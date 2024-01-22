@@ -1,6 +1,6 @@
 import thingshappen  from '../assets/thingshappen.png';
 import contact  from '../assets/contact.png';
-import logo  from '../assets/logo.png';
+import logo  from '../assets/logo.svg';
 import logo01  from '../assets/logo01.png';
 import logo02  from '../assets/logo02.png';
 import logo03  from '../assets/logo03.png';
@@ -19,8 +19,8 @@ import team03 from '../assets/team03.png';
 import team04 from '../assets/team04.png';
 import team05 from '../assets/team05.png';
 import team06 from '../assets/team06.png';
-import team01 from '../assets/team01.png';
-import hero from '../assets/hero.png';
+import team01 from '../assets/team01.svg';
+import hero from '../assets/hero.svg';
 
 export default{
 thingshappen,
