@@ -1,5 +1,5 @@
 import thingshappen  from '../assets/thingshappen.svg';
-import contact  from '../assets/contact.png';
+import contact  from '../assets/contact.svg';
 import logo  from '../assets/logo.svg';
 import logo01  from '../assets/logo01.png';
 import logo02  from '../assets/logo02.png';
