@@ -2,11 +2,6 @@
 
 :root {
     --font-base: 'Space Grotesk', sans-serif;
-    /* --color-text: #000000;
-    --color-highlight: #94fb17;
-    --color-dark: #191A23;
-    --color-grey: #F3F3F3; */
-
     --color-text: #fff;
     --color-text-2: #000;
     --color-highlight: #94fb17;
@@ -152,6 +147,7 @@ input[type="text"] {
 .btn-positivus::before {
   content: "";
   background: #000;
+  /* color: '#fff'; */
   width: 120%;
   left: -10%;
   transform: skew(30deg);
@@ -159,6 +155,7 @@ input[type="text"] {
 }
 
 .btn-positivus:hover::before {
+  color: #fff;
   transform: translate3d(100%, 0, 0);
 }
 

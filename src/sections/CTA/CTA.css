@@ -6,6 +6,10 @@
   margin: 6rem 0;
   }
 
+.cta h3 {
+    color: var(--color-text-2)
+}
+
   .cta img{
   margin-top: -100px;
       position: absolute;

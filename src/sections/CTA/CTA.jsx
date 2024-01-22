@@ -13,7 +13,11 @@ const CTA = () => {
             Contact us today to learn more about how our digital marketing
             services can help your business grow and succeed online.
           </p>
-          <button className="btn-positivus">Get your free proposal</button>
+          <button className="btn-positivus">
+            <span>
+            Get your free proposal
+            </span>
+            </button>
         </div>
         <div className="col-lg-4 d-lg-flex d-none">
           <img src={images.thingshappen} alt="thingshappen" />
