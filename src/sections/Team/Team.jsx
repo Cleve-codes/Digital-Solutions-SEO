@@ -34,7 +34,15 @@ const Team = () => {
         ))}
       </div>
       <div className="d-flex mt-2 justify-content-md-end justify-content-center">
-        <button className="btn-positivus">See all team</button>
+        <button className="button">
+          <span className="circle1"></span>
+          <span className="circle2"></span>
+          <span className="circle3"></span>
+          <span className="circle4"></span>
+          <span className="circle5"></span>
+          <span className="circle6"></span>
+          <span className="text">Work With Us</span>
+        </button>
       </div>
     </div>
   );

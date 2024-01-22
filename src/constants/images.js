@@ -14,12 +14,12 @@ import services03  from '../assets/services03.png';
 import services04  from '../assets/services04.png';
 import services05  from '../assets/services05.png';
 import services06  from '../assets/services06.png';
-import team02 from '../assets/team02.png';
-import team03 from '../assets/team03.png';
-import team04 from '../assets/team04.png';
-import team05 from '../assets/team05.png';
-import team06 from '../assets/team06.png';
-import team01 from '../assets/team01.svg';
+import team02 from '../assets/team02.jpg';
+import team03 from '../assets/team03.jpg';
+import team04 from '../assets/team04.jpg';
+import team05 from '../assets/team05.jpg';
+import team06 from '../assets/team06.jpg';
+import team01 from '../assets/team01.jpg';
 import hero from '../assets/hero.svg';
 
 export default{
