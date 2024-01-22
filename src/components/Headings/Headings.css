@@ -10,6 +10,7 @@
 
 .headings h3 {
   background: var(--color-highlight-2);
+  color: var(--color-text-2);
   font-weight: 500;
   font-size: 40px;
   line-height: 41px;
@@ -23,6 +24,7 @@
   font-size: 18px;
   line-height: 23px;
   max-width: 580px;
+  color: gray;
 }
 
 @media(max-width: 768px) {
