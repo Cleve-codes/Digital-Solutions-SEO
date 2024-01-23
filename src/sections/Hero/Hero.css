@@ -24,6 +24,7 @@
   justify-content: center;
   flex-wrap: nowrap;
   overflow-x: scroll;
+  margin-top: 2em;
  }
 .clients img{
    filter: grayscale(100%);

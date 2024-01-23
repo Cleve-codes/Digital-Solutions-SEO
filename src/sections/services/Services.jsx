@@ -2,10 +2,36 @@
 import Headings from "../../components/Headings/Headings";
 import { data } from "../../constants";
 // import { BsFillArrowUpRightCircleFill } from 'react-icons/bs';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import "./Services.css";
 
 const Services = () => {
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  {/* Animations with GSAP  */}
+  {/* Reveal section onScroll */}
+  useGSAP(() => {
+
+    const tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 2 } });
+
+    {/* Hero text to Slide in */}
+    tl.fromTo('#services div', { y: -50, scale: 0},
+    { scale: 1, y: 0, duration: 2, stagger: 0.2, scrollTrigger: {
+      trigger: '#services',
+      start: '400 center',
+      end: 'center center',
+      scrub: 1,
+      // toggleActions: 'play none none reverse',
+    },
+  })
+
+  })
+
+
   return (
     <div id="services" className="d-block pt-md-4">
       <Headings

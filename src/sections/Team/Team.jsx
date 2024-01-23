@@ -3,10 +3,43 @@ import Headings from "../../components/Headings/Headings";
 import { data } from "../../constants";
 import { BsLinkedin } from "react-icons/bs";
 import "./Team.css";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 const Team = () => {
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    const tl = gsap.timeline()
+
+    tl.fromTo('#section .headings', { y: 50, opacity: 0}, {
+      y: 0,
+      opacity: 1,
+      delay: 0.5,
+      duration: 2,
+      scrollTrigger: {
+        trigger: '#section',
+        start: 'top 90%',
+        end: 'bottom 80%',
+        scrub: 1,
+        markers: true,
+      },
+    }).fromTo('.row', {
+      y: 50,
+      opacity: 0,
+    }, {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+    })
+
+  })
+
+
   return (
-    <div className="section-padding">
+    <div id="section" className="section-padding">
       <Headings
         title="Team"
         text="Meet the skilled and experienced team behind our successful digital marketing strategies"

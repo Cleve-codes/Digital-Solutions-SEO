@@ -2,7 +2,8 @@ import images from "../../constants/images";
 import "./Hero.css";
 import IconScroll from "../../components/IconScroll/IconScroll";
 import gsap from 'gsap'
-import { useLayoutEffect } from "react";
+// import { useLayoutEffect } from "react";
+import { useGSAP } from "@gsap/react";
 
 const logos = ["logo01", "logo02", "logo03", "logo04", "logo05", "logo06"];
 
@@ -10,14 +11,16 @@ const Hero = () => {
 
 
   {/* Animations with GSAP  */}
-  useLayoutEffect(() => {
+  useGSAP(() => {
 
-    const tl = gsap.timeline({ defaults: { ease: "power4.out", duration: 2 } });
+    const tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 2 } });
 
     {/* Hero text to Slide in */}
     tl.fromTo('.title', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 })
     .fromTo('.py-4', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 }, "-=1.0")
-    .fromTo('.btn-positivus', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 }, "-=.9")
+    .fromTo('.btn-positivus', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1 }, "-=.9")
+    .fromTo('.img-fluid', {scale: 0, opacity: 0}, {scale: 1, opacity: 1, duration: 1, ease: 'back.inOut', delay: 0.5})
+    .fromTo('.clients img', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1, stagger: 0.1 }, "-=1.5")
   })
 
   return (
