@@ -22,9 +22,10 @@ const Services = () => {
     tl.fromTo('#services div', { y: -50, scale: 0},
     { scale: 1, y: 0, duration: 2, stagger: 0.2, scrollTrigger: {
       trigger: '#services',
-      start: '400 center',
-      end: 'center center',
+      start: 'top 60%',
+      end: 'bottom center',
       scrub: 1,
+      // markers: true,
       // toggleActions: 'play none none reverse',
     },
   })

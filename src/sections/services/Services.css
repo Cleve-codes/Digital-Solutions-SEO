@@ -17,7 +17,12 @@
     justify-content: space-between;
     flex-direction: column;
     min-height: 210px;
+}
 
+@media (max-width: 510px) {
+    .btn .learn-more {
+        display: none;
+    }
 }
 
 .bdark {

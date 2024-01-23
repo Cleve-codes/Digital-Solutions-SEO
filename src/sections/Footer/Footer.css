@@ -18,6 +18,16 @@
   padding: 0 15px;
 }
 
+@media (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+}
+
 .footer__foot {
   margin-top: 1.5em;
   display: flex;

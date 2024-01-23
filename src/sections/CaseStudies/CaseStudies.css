@@ -92,6 +92,15 @@ button {
   color: #fff;
  }
 
+ @media(max-width: 768px) {
+  button {
+      padding: 15px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+  }
+}
+
 .case-studies {
   background: var(--color-dark);
   margin: 1rem auto;
@@ -106,7 +115,6 @@ button {
 
 .case-studies-item {
   display: inline-block;
-
 }
 
 .case-studies p {

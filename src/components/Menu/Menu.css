@@ -66,8 +66,8 @@
   }
 
   .nav-link:last-child {
-      background: var(--color-highlight);
-      color: var(--color-text);
+      background: var(--color-highlight-2);
+      color: var(--color-text-2);
       text-align: center;
 
 

@@ -7,7 +7,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-const Team = () => {
+const  Team = () => {
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -22,17 +22,44 @@ const Team = () => {
       scrollTrigger: {
         trigger: '#section',
         start: 'top 90%',
-        end: 'bottom 80%',
+        end: 'bottom 70%',
         scrub: 1,
-        markers: true,
+        // markers: true,
       },
-    }).fromTo('.row', {
+    }).fromTo('.row .card-team', {
       y: 50,
       opacity: 0,
     }, {
       y: 0,
       opacity: 1,
+      delay: 1,
+      stagger: 0.2,
       duration: 2,
+      scrollTrigger: {
+        trigger: '#section',
+        start: 'top 90%',
+        end: 'bottom 80%',
+        scrub: 1,
+        // markers: true,
+      }
+    }).fromTo('.team__button', {
+      y: 50,
+      opacity: 0,
+      scale: 0,
+    }, {
+      y: 0,
+      scale: 1,
+      opacity: 1,
+      delay: 2,
+      duration: 3,
+      ease: 'power4.out',
+      scrollTrigger: {
+        trigger: '.card-team:last-child',
+        start: 'bottom 80%',
+        end: '700 center',
+        scrub: 1,
+        // markers: true,
+      }
     })
 
   })

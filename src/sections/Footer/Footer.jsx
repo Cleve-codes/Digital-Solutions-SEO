@@ -1,8 +1,83 @@
 import { data } from '../../constants'
 import { images } from '../../constants'
 import './Footer.css'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
 const Footer = () => (
+
+  gsap.registerPlugin(ScrollTrigger),
+
+  useGSAP(() => {
+
+      const tl = gsap.timeline({ defaults: { ease: 'power4.Out', duration: 2 }});
+
+      tl.fromTo('.footer__section .logo', {
+        y: 50,
+        opacity: 0,
+      }, {
+        y: 0,
+        opacity: 1,
+        delay: 0.5,
+        duration: 2,
+        scrollTrigger: {
+          trigger: '.contact',
+          start: '80% center',
+          end: '20% center',
+          scrub: 1,
+          // markers: true,
+        },
+      }).fromTo('.links', {
+        y: 50,
+        opacity: 0,
+      }, {
+        y: 0,
+        opacity: 1,
+        delay: 1,
+        stagger: 0.5,
+        duration: 2,
+        scrollTrigger: {
+          trigger: '.contact',
+          start: '80% center',
+          end: '20% center',
+          scrub: 1,
+          // markers: true,
+        }
+      }).fromTo('.hr', {
+        y: 50,
+        opacity: 0,
+      }, {
+        y: 0,
+        opacity: 1,
+        duration: 2,
+        scrollTrigger: {
+          trigger: '.contact',
+          start: '80% center',
+          end: '20% center',
+          scrub: 1,
+          // markers: true,
+        }
+      }).fromTo('.footer__foot, .right, .footer__social-links', {
+        y: 50,
+        opacity: 0,
+      }, {
+        y: 0,
+        opacity: 1,
+        stagger: .2,
+        delay: 4,
+        duration: 2,
+        scrollTrigger: {
+          trigger: '.contact',
+          start: '80% center',
+          end: '20% center',
+          scrub: 1,
+          // markers: true,
+        }
+      })
+
+    }),
+
   <section className='footer__section'>
     <div className='footer__container'>
       <div className="logo">
@@ -11,7 +86,7 @@ const Footer = () => (
         <h1 className="h1">SMS Digital</h1>
       </div>
         <p>
-          A new way to make the payments easy, reliable and secure.
+        Transforming Your Digital Landscape: Making Marketing Effortless, Reliable, and Secure.
         </p>
       </div>
 

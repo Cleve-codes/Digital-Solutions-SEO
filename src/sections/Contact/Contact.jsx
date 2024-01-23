@@ -1,10 +1,64 @@
 // import React from 'react'
 import Headings from "../../components/Headings/Headings";
 import "./Contact.css";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 const Contact = () => {
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    const tl = gsap.timeline()
+
+    tl.fromTo('#contact .headings', { y: 50, opacity: 0}, {
+      y: 0,
+      opacity: 1,
+      delay: 0.5,
+      duration: 2,
+      scrollTrigger: {
+        trigger: '#quote',
+        start: 'top 90%',
+        end: 'bottom 70%',
+        scrub: 1,
+        // markers: true,
+      },
+    }).fromTo('.contact', {
+      scale: 0,
+      opacity: 0,
+    }, {
+      scale: 1,
+      opacity: 1,
+      delay: 1,
+      duration: 2,
+      scrollTrigger: {
+        trigger: '#quote',
+        start: 'top 90%',
+        end: 'bottom 80%',
+        scrub: 1,
+        // markers: true,
+      }
+    }).fromTo('form div', {
+      y: 50,
+      opacity: 0,
+    }, {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+      scrollTrigger: {
+        trigger: '#quote',
+        start: 'top 90%',
+        end: 'bottom bottom',
+        scrub: 1,
+        // markers: true,
+      }
+    })
+
+  })
+
   return (
-    <div className="section-padding">
+    <div id='contact' className="section-padding">
       <Headings
         title="Contact Us"
         text="Connect with Us: Let's  Discuss Your Digital Marketing Needs"
