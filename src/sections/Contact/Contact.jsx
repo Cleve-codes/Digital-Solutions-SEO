@@ -2,7 +2,6 @@
 import Headings from "../../components/Headings/Headings";
 import "./Contact.css";
 
-
 const Contact = () => {
   return (
     <div className="section-padding">
@@ -64,10 +63,8 @@ const Contact = () => {
                   rows="3"
                 ></textarea>
               </div>
-              <button type="submit" className="btn-positivus w-100">
-                <span>
-                Submit
-                </span>
+              <button className="contact__button" >
+                <span>Submit</span>
               </button>
             </form>
           </div>

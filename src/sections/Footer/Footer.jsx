@@ -57,7 +57,7 @@ const Footer = () => (
         {
           data.socialMedia.map((social, index) => {
             return (
-            <a key={index} href={social.link} >
+            <a key={index} href={social.link} target='_blank' rel='noreferrer' >
               <social.icon
               className='icon'
               onClick={() => window.open(social.link)}
