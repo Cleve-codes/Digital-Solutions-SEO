@@ -155,9 +155,12 @@ color: var(--color-dark);
 }
 
 /* Button */
+a .btn {
+    color: #000;
+}
 
 .btn {
-    position: relative;
+position: relative;
  display: inline-block;
  cursor: pointer;
  outline: none;
@@ -224,18 +227,13 @@ color: var(--color-dark);
  bottom: 0;
  /* padding: 0.75rem 0;
  margin: 0 0 0 1.85rem; */
- color: #282936;
- /* color: #000; */
- /* font-weight: 700;
- line-height: 1.6; */
+ color: #000;
  text-align: center;
  text-transform: uppercase;
  /* background-color: none; */
 }
 
-.btn .button-text {
-    color: black;
-}
+
 
 .btn:hover .circle {
     width: 100%;

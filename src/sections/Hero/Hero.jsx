@@ -1,10 +1,25 @@
 import images from "../../constants/images";
 import "./Hero.css";
 import IconScroll from "../../components/IconScroll/IconScroll";
+import gsap from 'gsap'
+import { useLayoutEffect } from "react";
 
 const logos = ["logo01", "logo02", "logo03", "logo04", "logo05", "logo06"];
 
 const Hero = () => {
+
+
+  {/* Animations with GSAP  */}
+  useLayoutEffect(() => {
+
+    const tl = gsap.timeline({ defaults: { ease: "power4.out", duration: 2 } });
+
+    {/* Hero text to Slide in */}
+    tl.fromTo('.title', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 })
+    .fromTo('.py-4', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 }, "-=1.0")
+    .fromTo('.btn-positivus', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 }, "-=.9")
+  })
+
   return (
     <div className="hero">
       <div className="row align-items-center">

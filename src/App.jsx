@@ -9,12 +9,36 @@ import Team from './sections/Team/Team';
 import Testimonials from './sections/Testimonials/Testimonials';
 import Contact from './sections/Contact/Contact';
 import Footer from './sections/Footer/Footer';
+import { useEffect, useState } from 'react';
+import Loader from './components/Loader/Loader';
 
 
 function App() {
 
+  {/* Loader State */}
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+
+    const fakeFetch = () => {
+
+      setTimeout(() => {
+        setIsLoading(false)
+      }, 4000)
+
+    }
+
+    fakeFetch()
+
+  })
+
+
   return (
-    <div className='container'>
+    <>
+      {
+      isLoading ?
+       <Loader/> :
+       <div className='container'>
       <Menu/>
       <Hero/>
       <Services/>
@@ -25,7 +49,9 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
-    </div>
+       </div>
+    }
+    </>
   )
 }
 
