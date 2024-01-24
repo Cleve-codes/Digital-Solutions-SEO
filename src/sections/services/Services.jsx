@@ -51,7 +51,7 @@ const Services = () => {
                     <span className="span">{titleone} </span>
                     <span className="span">{titletwo}</span>
                   </div>
-                  <a href='#contact' alt={titleone}>
+                  <a href='#use-cases' alt={titleone}>
                     <button className="btn learn-more">
                       <span className="circle" aria-hidden="true">
                         <span className="icon arrow"></span>
