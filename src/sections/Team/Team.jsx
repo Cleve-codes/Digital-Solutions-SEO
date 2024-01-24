@@ -94,6 +94,7 @@ const  Team = () => {
         ))}
       </div>
       <div className="d-flex mt-2 justify-content-md-end justify-content-center">
+        <a href="#contact">
         <button alt="meet the squad" className="team__button">
           <i>m</i>
           <i>e</i>
@@ -110,6 +111,7 @@ const  Team = () => {
           <i>a</i>
           <i>d</i>
         </button>
+        </a>
       </div>
     </div>
   );

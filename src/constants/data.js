@@ -122,28 +122,28 @@ const Team = [
     {
         name: 'Jeffers Abaga',
         position: 'CEO and Founder',
-        info: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+        info: 'With a proven track record in steering brands towards online excellence, Jeffers is your go-to expert for unleashing the true potential of SEO, PPC, and content strategy',
         foto: images.team01,
         linkedin: '#',
     },
     {
         name: 'Cleve Momanyi',
         position: 'Director of Operations',
-        info: '7+ years of experience in project management and team leadership. Strong organizational and communication skills',
+        info: 'A seasoned strategist and mastermind of efficiency, our operations maestro ensures every campaign sails smoothly.',
         foto: images.team02,
         linkedin: '#',
     },
     {
         name: 'Michael Wafula',
         position: 'Senior SEO Specialist',
-        info: '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization',
+        info: 'Our SEO Specialist is the unsung hero in the digital saga, orchestrating a symphony of keywords and algorithms to propel your brand to the forefront',
         foto: images.team03,
         linkedin: '#',
     },
     {
         name: 'Emily Mwangi',
         position: 'PPC Manager',
-        info: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis',
+        info: ' Step into the realm of effective PPC strategies and witness your business soar to new heights under the guidance of our PPC virtuoso.',
         foto: images.team04,
         linkedin: '#',
     },
@@ -157,7 +157,7 @@ const Team = [
     {
         name: 'Sarah Akinyi',
         position: 'Content Creator',
-        info: '2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries',
+        info: 'Sarah is the creative force behind building your brand\'s social presence. From engaging posts to captivating captions that will leave your audience wanting more, she does it all.',
         foto: images.team06,
         linkedin: '#',
     },
@@ -168,22 +168,22 @@ const Testimonials = [
     {
         name: 'John Oloo',
         position: 'Marketing Director at Digitech Corp',
-        testimonial: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
+        testimonial: '"We have been working with SMS for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
     },
     {
         name: 'Stanley Mwenda',
-        position: 'Founder of Qwetu Housing',
-        testimonial: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
+        position: 'Founder of Qwetu Tech',
+        testimonial: "'Choosing SMS for our digital marketing needs was a game-changer! Their SEO strategies propelled us to the top of search results, and the PPC campaigns delivered exceptional ROI. It's a partnership that has truly transformed our online presence'",
     },
     {
         name: 'Mrs.Margaret Muthoni',
-        position: 'Marketing Director at Kenya Airways',
-        testimonial: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
+        position: 'Marketing Director at KQ',
+        testimonial: '"SMS\'s social media magic worked wonders for our brand. Their Social Media Specialist crafted engaging content that resonated with our audience, creating a vibrant online community. Our social metrics have never looked better!"',
     },
     {
         name: 'Moses Keter',
         position: 'Marketing Director at Pendeza Org',
-        testimonial: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
+        testimonial: 'We\'ve been with SMS for our email marketing needs, and the results speak volumes. The campaigns they crafted not only drove engagement but also brought in valuable leads. Trustworthy, reliable, and always exceeding expectations.',
     },
 ];
 

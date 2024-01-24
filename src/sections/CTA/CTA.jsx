@@ -45,11 +45,13 @@ const CTA = () => {
             Contact us today to learn more about how our digital marketing
             services can help your business grow and succeed online.
           </p>
+          <a href="mailto:clevemomanyi@gmail.com?subject=Free Proposal Request" target="_blank" rel="noreferrer" >
           <button className="btn-positivus">
             <span>
             Get your free proposal
             </span>
             </button>
+          </a>
         </div>
         <div className="col-lg-4 d-lg-flex d-none">
           <img src={images.thingshappen} alt="thingshappen" />

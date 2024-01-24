@@ -46,9 +46,11 @@ const Hero = () => {
             innovation meets impact, and your brand takes center stage in the
             online spotlight.
           </p>
+          <a href="#contact">
           <button className="btn-positivus">
             <span>Book a Consultation</span>
           </button>
+          </a>
         </div>
         <div className="col-md-6 col-12 mt-md-0 mt-4">
           <img className="img-fluid" src={images.hero} alt="design" />
