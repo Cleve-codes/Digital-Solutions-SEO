@@ -66,3 +66,11 @@ content: '»';
   opacity: 1;
   right: 0;
 }
+
+@media (max-width: 600px) {
+  .toast-mobile {
+    /* Add your custom styles for mobile here */
+    width: 90%;
+    margin: auto;
+  }
+}
