@@ -42,7 +42,7 @@ const Services = () => {
 
       <div className="row">
         {data.ServicesData.map(
-          ({ titleone, titletwo, link, itemclass, imgURL }, index) => (
+          ({ titleone, titletwo, itemclass, imgURL }, index) => (
             <div className="col-lg-6 col-12" key={index}>
               <div className={`row ${itemclass}`}>
                 <div className="col-md-6 box">

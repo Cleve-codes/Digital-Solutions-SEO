@@ -4,8 +4,27 @@ import "./Contact.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import emailjs from '@emailjs/browser'
+import { useRef } from "react";
+
+// require('dotenv').config();
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_d0d771r', 'template_y85wf6q', form.current, 'qELPLyxjFLYugW-ed')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    form.current.reset();
+
+  };
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -67,7 +86,7 @@ const Contact = () => {
       <div className="contact" id="quote">
         <div className="row">
           <div className="col-md-6 col-12">
-            <form>
+            <form ref={form} onSubmit={sendEmail} >
               <div className="form-check form-check-inline">
                 <input
                   className="form-check-input"
@@ -99,6 +118,7 @@ const Contact = () => {
                   className="form-control"
                   type="text"
                   placeholder="Name"
+                  name="user_name"
                 />
               </div>
               <div className="form-group">
@@ -107,6 +127,7 @@ const Contact = () => {
                   className="form-control"
                   type="email"
                   placeholder="Email"
+                  name="user_email"
                 />
               </div>
               <div className="form-group">
@@ -115,6 +136,7 @@ const Contact = () => {
                   className="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
+                  name="message"
                 ></textarea>
               </div>
               <button className="contact__button" >
