@@ -12,19 +12,27 @@ const Hero = () => {
 
   {/* Animations with GSAP  */}
   useGSAP(() => {
-
     const tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 2 } });
 
-    {/* Hero text to Slide in */}
-    tl.fromTo('.title', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 })
-    .fromTo('.py-4', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 }, "-=1.0")
-    .fromTo('.btn-positivus', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1 }, "-=.9")
-    .fromTo('.img-fluid', {scale: 0, opacity: 0}, {scale: 1, opacity: 1, duration: 1, ease: 'back.inOut', delay: 0.5})
-    .fromTo('.clients img', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1, stagger: 0.1 }, "-=1.5")
-  })
+    if (window.innerWidth < 768) {
+      // Animation for smaller screens
+      tl.fromTo('.title', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 })
+        .fromTo('.py-4', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 }, "-=1.0")
+        .fromTo('.btn-positivus', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1 }, "-=.9")
+        .fromTo('.img-fluid', {scale: 0, opacity: 0}, {scale: 1, opacity: 1, duration: 1, ease: 'back.inOut'})
+        .fromTo('.clients img', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1, stagger: 0.1 }, "-=1.5");
+    } else {
+      // Animation for larger screens
+      tl.fromTo('.title', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 })
+        .fromTo('.py-4', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1.5 }, "-=1.0")
+        .fromTo('.btn-positivus', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1 }, "-=.9")
+        .fromTo('.img-fluid', {scale: 0, opacity: 0}, {scale: 1, opacity: 1, duration: 1, ease: 'back.inOut', delay: 0.5})
+        .fromTo('.clients img', { opacity: 0, y: +50}, { opacity: 1, y: 0, duration: 1, stagger: 0.1 }, "-=1.5");
+    }
+  });
 
   return (
-    <div className="hero">
+    <div data-scroll-section className="hero">
       <div className="row align-items-center">
         <div className="col-md-6 col-12">
           <h1 className="title">

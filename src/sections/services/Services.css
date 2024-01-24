@@ -19,11 +19,6 @@
     min-height: 210px;
 }
 
-@media (max-width: 510px) {
-    .btn .learn-more {
-        display: none;
-    }
-}
 
 .bdark {
     background: var(--color-dark);
@@ -251,4 +246,10 @@ position: relative;
 
 .btn:hover .button-text {
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        display: none;
+    }
 }

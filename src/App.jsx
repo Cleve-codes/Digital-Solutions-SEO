@@ -35,8 +35,25 @@ function App() {
       }, 4000);
     };
 
+    (async () => {
+      const locomotiveScroll = (await import("locomotive-scroll")).default;
+      new locomotiveScroll({
+        el: containerRef.current,
+        smooth: true,
+        multiplier: 0.5,
+        smartphone: {
+          smooth: true,
+        },
+        tablet: {
+          smooth: true,
+        },
+      });
+    })
+
     fakeFetch();
   });
+
+
 
   return (
     <>

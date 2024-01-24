@@ -34,7 +34,7 @@ const Services = () => {
 
 
   return (
-    <div id="services" className="d-block pt-md-4">
+    <div data-scroll-section id="services" className="d-block pt-md-4">
       <Headings
         title="Services"
         text="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include"
