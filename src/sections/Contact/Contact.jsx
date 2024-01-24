@@ -7,6 +7,11 @@ import { useGSAP } from "@gsap/react";
 import emailjs from '@emailjs/browser'
 import { useRef } from "react";
 
+
+// REACT TOASTIFY
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 // require('dotenv').config();
 
 const Contact = () => {
@@ -17,6 +22,13 @@ const Contact = () => {
 
     emailjs.sendForm('service_d0d771r', 'template_y85wf6q', form.current, 'qELPLyxjFLYugW-ed')
       .then((result) => {
+          toast.success('Message Sent Successfully', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+          });
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
@@ -146,6 +158,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
