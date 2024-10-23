@@ -120,14 +120,14 @@ const WorkingProcess = [
 
 const Team = [
     {
-        name: 'Jeffers Abaga',
+        name: 'Omondi Otieno',
         position: 'CEO and Founder',
-        info: 'With a proven track record in steering brands towards online excellence, Jeffers is your go-to expert for unleashing the true potential of SEO, PPC, and content strategy',
+        info: 'With a proven track record in steering brands towards online excellence, Omondi is your go-to expert for unleashing the true potential of SEO, PPC, and content strategy',
         foto: images.team01,
         linkedin: '#',
     },
     {
-        name: 'Cleve Momanyi',
+        name: 'Samuel MWamburi',
         position: 'Director of Operations',
         info: 'A seasoned strategist and mastermind of efficiency, our operations maestro ensures every campaign sails smoothly.',
         foto: images.team02,
